@@ -3,10 +3,14 @@ import React from 'react'
 
 function Button({
     name = 'View More',
-    type = 'default'
+    type = 'default',
+    size = 'large'
 }) {
+
+    const className = `btn btn-size-${size} btn-${type}`;
+
     return (
-        <button className={`btn btn-${type}`}>{name}</button>
+        <button className={className}>{name}</button>
     )
 }
 

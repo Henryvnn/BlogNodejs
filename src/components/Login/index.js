@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './login.css'; // Assuming you have a CSS file for styling
-
+import Button from '../shared/Button';
 
 function Login() {
     return (
@@ -22,7 +22,7 @@ function Login() {
                                     <input type="password" placeholder="Enter Password ..." id="password" />
                                 </div>
                                 <div className="d-flex tcl-jc-between tcl-ais-center">
-                                    <button className="btn btn-primary btn-size-large">Submit</button>
+                                    <Button name="Submit" type="primary" size="small" />
                                     <Link to="/register">Register</Link>
                                 </div>
                             </form>
