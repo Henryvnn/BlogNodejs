@@ -15,10 +15,10 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <Homepage />
             },
-            {
-                path: '/login',
-                element: <LoginPage />
-            },
+            // {
+            //     path: '/login',
+            //     element: <LoginPage />
+            // },
             {
                 path: '/chi-tiet/:id',
                 element: <PostDetailPage />
@@ -29,10 +29,10 @@ const router = createBrowserRouter([
         ]
 
     },
-    {
-        path: '/admin',
-        element: <AdminLayout />,
-    },
+    // {
+    //     path: '/admin',
+    //     element: <AdminLayout />,
+    // },
     {
         //path not found
         path: '*',
