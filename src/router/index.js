@@ -32,6 +32,12 @@ const router = createBrowserRouter([
     {
         path: '/admin',
         element: <AdminLayout />,
+        children: [
+            {
+                path: '/admin/dashboard',
+                element: <Dashboard />
+            }
+        ]
     },
     {
         //path not found
