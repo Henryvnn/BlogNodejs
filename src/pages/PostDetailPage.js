@@ -1,15 +1,12 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import PostDetail from '../components/Post-detail';
+import { useParams } from 'react-router-dom';
 
 function PostDetailPage() {
+    //useParams hook để lấy id từ url
+    const { id } = useParams();
     return (
-        <div>
-            <Header />
-            <PostDetail />
-            <Footer />
-        </div>
+        <PostDetail />
     )
 }
 

@@ -7,16 +7,12 @@ import Footer from '../components/Footer';
 
 function Homepage() {
     return (
-        <>
-            <Header />
-            <div className="wrapper-content">
-                <Latestnews />
-                <Popularnews />
-                <Articlelist />
-                <div className="spacing" />
-            </div>
-            <Footer />
-        </>
+        <div className="wrapper-content">
+            <Latestnews />
+            <Popularnews />
+            <Articlelist />
+            <div className="spacing" />
+        </div>
     );
 }
 

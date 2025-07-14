@@ -1,19 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/Homepage';
-import LoginPage from './pages/LoginPage';
-import PostDetailPage from './pages/PostDetailPage';
-
+import { RouterProvider } from 'react-router-dom';
+import router from './router';
 
 function App() {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/post-detail" element={<PostDetailPage />} />
-            </Routes>
-        </Router>
+        <RouterProvider router={router} />
     );
 }
 

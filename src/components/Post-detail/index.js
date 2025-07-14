@@ -261,7 +261,6 @@ function index() {
                 </div>
                 {/* End Post Detail Wrapper Content */}
             </div>
-
         </>
     )
 }
