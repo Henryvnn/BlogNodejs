@@ -11,9 +11,9 @@ function Login() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (username === 'admin' && password === '123456') {
-            navigate('/');
-        }
+        // if (username === 'admin' && password === '1') {
+        //     navigate('/');
+        // }
     }
 
     return (
