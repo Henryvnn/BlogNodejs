@@ -88,6 +88,8 @@
 
 .header-nav__lists {
   margin: 0;
+  align-items: center !important;
+
   padding-left: 1rem;
   list-style: none;
   display: -webkit-box;

@@ -4,13 +4,14 @@ import React from 'react'
 function Button({
     name = 'View More',
     type = 'default',
-    size = 'large'
+    size = 'large',
+    onClick = () => { },
 }) {
 
     const className = `btn btn-size-${size} btn-${type}`;
 
     return (
-        <button className={className}>{name}</button>
+        <button onClick={onClick} className={className}>{name}</button>
     )
 }
 

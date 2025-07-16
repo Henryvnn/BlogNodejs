@@ -2016,6 +2016,7 @@ body {
       -webkit-box-pack: end;
       -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
+      align-self: center !important;
       justify-content: flex-end; }
       .header-nav__lists > li {
         margin: 0;

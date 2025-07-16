@@ -1,9 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './login.css'; // Assuming you have a CSS file for styling
 import Button from '../shared/Button';
 
 function Login() {
+    const navigate = useNavigate();
+
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (username === 'admin' && password === '123456') {
+            navigate('/');
+        }
+    }
+
     return (
         <div className="login">
             <div className="spacing" />
@@ -15,14 +27,20 @@ function Login() {
                             <form>
                                 <div className="form-control">
                                     <label htmlFor="username">Username</label>
-                                    <input type="text" placeholder="Enter Username ..." id="username" />
+                                    <input
+                                        value={username}
+                                        onChange={(e) => setUsername(e.target.value)}
+                                        type="text"
+                                        placeholder="Enter Username ..."
+                                        id="username"
+                                    />
                                 </div>
                                 <div className="form-control">
                                     <label htmlFor="password">Password</label>
-                                    <input type="password" placeholder="Enter Password ..." id="password" />
+                                    <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Enter Password ..." id="password" />
                                 </div>
                                 <div className="d-flex tcl-jc-between tcl-ais-center">
-                                    <Button name="Submit" type="primary" size="small" />
+                                    <Button onClick={handleSubmit} name="Submit" type="primary" size="small" />
                                     <Link to="/register">Register</Link>
                                 </div>
                             </form>
@@ -36,3 +54,5 @@ function Login() {
 }
 
 export default Login;
+
+// react redux toolkit

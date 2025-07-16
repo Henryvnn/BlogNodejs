@@ -27,9 +27,7 @@ const router = createBrowserRouter([
                 element: <SearchPage />
             }
         ]
-
     },
-
     {
         //path not found
         path: '*',
@@ -38,3 +36,5 @@ const router = createBrowserRouter([
 ])
 
 export default router;
+
+// react redux toolkit
